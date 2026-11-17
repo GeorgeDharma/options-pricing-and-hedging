@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.ipynb text eol=lf
+# Preserve exact bytes for input hashes and the research selection record.
+data/** -text
+*.png binary
+*.pdf binary
+*.zip binary
+*.gz binary

@@ -1,0 +1,101 @@
+{
+  "source_package": "George_Dharma_10_Options_Python.zip",
+  "files": [
+    {
+      "path": "George_Dharma_10_Options_Notebook.ipynb",
+      "sha256": "cc9a79b9bcf1903ebb87499a428251f6d942d764d0d3fcfe4cb7e00583d1e2f8"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1a41462c50ea2074240e06a2f50675abbb238c85d7b0dc9b23de8117f5d4481b"
+    },
+    {
+      "path": "data/assumptions.json",
+      "sha256": "41411691f78939a756f5668787aabdf9090eb7e3d00f92e736ddcb6d1f45c260"
+    },
+    {
+      "path": "options/__init__.py",
+      "sha256": "24b77e7946df9047bcd7abce11471501c83f1759ca42952778d10a47783b294b"
+    },
+    {
+      "path": "options/analysis.py",
+      "sha256": "491aada8a4fdddf18a84a589469ec6d619e1f1e2938d610a7acfa62646d72493"
+    },
+    {
+      "path": "options/engine.py",
+      "sha256": "ccdc7e362a9cf29e9a20f1bd07b43f4d83014832182a02ecd082c7183e5ef29f"
+    },
+    {
+      "path": "outputs/cost_sensitivity.csv",
+      "sha256": "0dc91054416f27372e5acf93291346c7641b0a87a3f1edf553e55a6caca2acdb"
+    },
+    {
+      "path": "outputs/greeks.csv",
+      "sha256": "d1d5c08adc7d5345eba3962dc0f0aca6798502322d3b84c0d998204fb321a339"
+    },
+    {
+      "path": "outputs/hedge_comparison.png",
+      "sha256": "846051e541ead3c0a39c40bee6ac82056bfc0bb88c74664b8a244ffb59b95836"
+    },
+    {
+      "path": "outputs/hedging.csv",
+      "sha256": "0b0900589780c8a5476f3db646f5c51d337ce916175700dc57381e8cb5fdb41e"
+    },
+    {
+      "path": "outputs/journal.csv",
+      "sha256": "7248bfe19f52d17a63f45f59497cd525fb42bdaaf5ea44ad2c05f3a30a977033"
+    },
+    {
+      "path": "outputs/monte_carlo.csv",
+      "sha256": "283bdca205635daa5664d610c56735c247772614e64287dea5e09840cab60aea"
+    },
+    {
+      "path": "outputs/paired.csv",
+      "sha256": "a91eff8f36bfc9fef2eb20be2c14e9f43ceefd40930fa2adffd278f777e52515"
+    },
+    {
+      "path": "outputs/path_checks.csv",
+      "sha256": "58990e7efec30316d8667d6fa809a17828e0f42771708290cea3d602996eaa09"
+    },
+    {
+      "path": "outputs/pricing.csv",
+      "sha256": "c0db852883878a3bbe8aea73fc3083d1f8fd9389e5fcced0aec4dd2f5de5af2a"
+    },
+    {
+      "path": "outputs/pricing_convergence.png",
+      "sha256": "50d2088c51938149300f123acca4b294e3cd485b0c3753be092e0ef4cd64597a"
+    },
+    {
+      "path": "outputs/quotes.csv",
+      "sha256": "b4d36cb6f771bad5ad0bc3dc4704afb8a29609d6e32a24678a21dd0f8ff1653d"
+    },
+    {
+      "path": "outputs/results.json",
+      "sha256": "9052d55ea6c4093f038a41b2e1a635e5c981c962b0be0ddea071f322cb67291e"
+    },
+    {
+      "path": "outputs/scenarios.csv",
+      "sha256": "b0c9ebca5ade75125e13a81bc20f295c84e18e1f3e569e6e78ac81f82ece2686"
+    },
+    {
+      "path": "outputs/simulation_pnl.csv",
+      "sha256": "b62197f666c0c7ccb0ff524c13b978e74b8efedf9d99b30fcdbb98f41294f152"
+    },
+    {
+      "path": "outputs/stress_comparison.png",
+      "sha256": "8c13441401ff6a607b85db4988c05733a9c503d9f56ba69833d60b13b40e2182"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "7cc9a7650ef4bf55dd0efdab27183678af5ca6ef6b82fe1bcd83f29900125695"
+    },
+    {
+      "path": "run_analysis.py",
+      "sha256": "6cd97e46de94800e841d027e951625ee46e8eb45d01a7e0b9d95ac1cc7935cd9"
+    },
+    {
+      "path": "tests/test_options.py",
+      "sha256": "61cf8e73971211ae6792012503ea2190118c5f3c974444282db146f0b62e3d41"
+    }
+  ]
+}

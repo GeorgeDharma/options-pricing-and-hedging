@@ -1,0 +1,18 @@
+{
+  "option": {"spot":36.0,"strike":40.0,"years":1.0,"rate":0.06,"dividend":0.0,"volatility":0.20,"kind":"put"},
+  "source": "QuantLib EquityOption example, European case; flat curves referenced to 17 May 1998 and maturity 17 May 1999 (Actual/365 Fixed).",
+  "source_url": "https://github.com/lballabio/QuantLib/blob/e4090768195f9c5b0bf8a6d0cb6802238342c50d/Examples/EquityOption/EquityOption.cpp",
+  "quote_status": "Illustrative bid and ask for the same European put at time zero, not observed market quotes.",
+  "illustrative_quote": {"bid":3.80,"ask":3.90},
+  "mc_seed":42,
+  "simulation": {
+    "paths":30000,"seed":1010,"sessions":252,"units":10000,"contracts":100,"multiplier":100,"cost_bps":5.0,
+    "settlement":"Cash payment of max(strike minus terminal spot, zero). Hypothetical contract on a tradable, non-dividend-paying asset.",
+    "funding":"Continuous 6% lending and borrowing; shorting allowed with no additional stock-borrow fee; no margin constraints.",
+    "cases":[
+      {"name":"Base","parameters":{"realised_vol":0.20}},
+      {"name":"Higher volatility","parameters":{"realised_vol":0.30}},
+      {"name":"Jumps","parameters":{"realised_vol":0.20,"jump_intensity":1.0,"jump_mean":-0.10,"jump_sd":0.15}}
+    ]
+  }
+}

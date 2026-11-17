@@ -1,6 +1,6 @@
 # Options pricing and hedging
 
-**George Dharma · Quant portfolio project 10 · Python 3.12**
+**George Dharma · Quant portfolio · Python 3.12**
 
 How accurately can we price a European put, and how much protection does a delta hedge provide after trading costs? This project compares analytical, tree and Monte Carlo pricing, then follows the cash and shares behind several hedge schedules.
 

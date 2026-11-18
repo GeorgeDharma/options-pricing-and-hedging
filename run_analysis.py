@@ -1,8 +1,12 @@
 from pathlib import Path
+from options.band_figure import draw
 from options.analysis import run
+from options.trade_band import run as stress_band
 
 if __name__ == "__main__":
     r = run(Path(__file__).resolve().parent)
+    stress_band(Path(__file__).resolve().parent)
+    draw(Path(__file__).resolve().parent / "outputs")
     print(f'European put value: ${r["option_value"]:.8f} per unit')
     for x in r["hedging"]:
         print(

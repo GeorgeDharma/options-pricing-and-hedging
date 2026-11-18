@@ -10,3 +10,4 @@ Thumbs.db
 .env.*
 !.env.example
 outputs/simulation_pnl.csv
+outputs/simulation_pnl.csv.gz

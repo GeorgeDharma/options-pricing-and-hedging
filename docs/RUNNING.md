@@ -44,7 +44,7 @@ On macOS or Linux:
 .venv/bin/python -m jupyterlab
 ```
 
-JupyterLab opens in your browser. Open `notebooks/analysis.ipynb`. Use **Kernel → Restart Kernel and Run All Cells** to run the notebook from a clean start. The first code cell recalculates the full experiment and can take a few minutes. Wait for it to finish before reading later results.
+JupyterLab opens in your browser. Open `notebooks/analysis.ipynb`. Use **Kernel → Restart Kernel and Run All Cells** to run the notebook from a clean start. The notebook displays the published results by default. To rerun the full experiment from the notebook, set `rebuild = True` in the first code cell and run all cells. This may take a few minutes.
 
 The notebook finds the project root automatically when opened from the root folder or its `notebooks` folder. Keep the complete folder structure together.
 
@@ -60,19 +60,11 @@ The program overwrites generated tables and figures in `outputs/`. It uses bundl
 | `No module named numpy` or another dependency | Run the install command with the same `.venv` Python used to run the project. |
 | `No module named rates`, `options` or `equity` | Extract the full ZIP and run the script from the folder containing `run_analysis.py`. |
 | Notebook asks for a kernel | Select Python 3 from the JupyterLab session launched above. |
-| The first notebook cell is busy | It is running the analysis. Avoid starting another copy; allow a few minutes. |
+| The first notebook cell is busy | A rebuild is running. Allow it to finish before running other cells. |
 | GitHub cannot preview the notebook | Download the ZIP and open the notebook locally in JupyterLab. |
 
 Pinned analysis dependencies are in `requirements.txt`. Notebook tools are separate in `requirements-notebook.txt`. See [validation notes](VALIDATION.md) for the tested environment and results.
 
 ## The complete simulation table
 
-`outputs/simulation_pnl.csv.gz` contains the original complete path-level table in compressed form. Compression preserves every row. Python can read it directly:
-
-```python
-import pandas as pd
-pnl = pd.read_csv("outputs/simulation_pnl.csv.gz")
-print(pnl.head())
-```
-
-Running the analysis also creates `outputs/simulation_pnl.csv`. That larger generated copy is excluded from Git tracking. The compressed bundled copy is a snapshot of the original experiment; it is not refreshed automatically when you change assumptions.
+A full run writes `outputs/simulation_pnl.csv` on your computer. It contains terminal P&L for every simulated path and fixed-schedule policy. To read it after running the analysis, use `pandas.read_csv("outputs/simulation_pnl.csv")`. The published ZIP includes the summary tables and a worked cash ledger.

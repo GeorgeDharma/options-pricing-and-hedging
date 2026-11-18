@@ -5,6 +5,12 @@ An original Python implementation of European option pricing, implied volatility
 and a self-financing delta-hedging experiment. The financial question is whether
 more frequent hedging reduces terminal losses enough to justify its trading costs.
 
+## Rebalancing when delta moves
+
+Five policies trade the same 30,000 paths within each scenario. Two follow the calendar. The other three trade when the gap between the current and desired stock hedge reaches 2.5, 5 or 10 delta points. Entry and liquidation count as trades. Funding and transaction costs enter each policy’s own cash ledger.
+
+For the 2.5-point band, the base simulation averages 83.5 trades per path and $920 in trading costs. Daily rebalancing averages 249.3 trades and $1,132 in costs. The mean loss across the worst 5% of paths rises from $5,477 to $5,509. Each policy has its own worst 5% of paths. The separate paired analysis compares terminal cash on identical paths and estimates a $219 mean improvement for the band, with a $209 to $229 Monte Carlo interval. [Execution results](../outputs/band_summary.csv) · [Paired differences](../outputs/band_differences.csv) · [Example cash ledger](../outputs/band_cash_ledger.csv)
+
 ## Running this version
 
 See [RUNNING.md](RUNNING.md). Open [the notebook](../notebooks/analysis.ipynb) for the worked calculation.
@@ -44,7 +50,7 @@ See [RUNNING.md](RUNNING.md). Open [the notebook](../notebooks/analysis.ipynb) f
 | `data/assumptions.json` | All case parameters and input provenance |
 | `outputs/results.json` | Complete machine-readable result; supports the readable report and Excel |
 | `outputs/*.csv` | Pricing, sensitivities, hedge distributions and sample ledger |
-| `outputs/simulation_pnl.csv.gz` | Compressed copy of every path's terminal P&L, gross P&L and financed costs for all 12 comparisons |
+| `outputs/simulation_pnl.csv` | Locally generated path-level terminal P&L, gross P&L and financed costs for the 12 fixed-schedule comparisons |
 | `tests/test_options.py` | 20 financial and accounting tests |
 
 The final workbook recalculates Black–Scholes prices, Greeks, an implied-volatility

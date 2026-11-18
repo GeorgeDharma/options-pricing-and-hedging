@@ -1,13 +1,19 @@
 {
-  "source_package": "George_Dharma_10_Options_Python.zip",
+  "source_package": "George_Dharma_GitHub_Projects_09-11.zip",
+  "source_directory": "George_Dharma_10_Options_Python",
+  "source_package_sha256": "707829b301d98dcd607ff9e2a731bc74cfaeda19d7ab9910e2b7a0fd4f935844",
   "files": [
     {
+      "path": ".gitignore",
+      "sha256": "e72faf5ba5957a45b72c1f47d86942e72cf3f1e6312ec7c9d1c41a87bdea655d"
+    },
+    {
       "path": "George_Dharma_10_Options_Notebook.ipynb",
-      "sha256": "cc9a79b9bcf1903ebb87499a428251f6d942d764d0d3fcfe4cb7e00583d1e2f8"
+      "sha256": "bdd5287bcb71847460673c8dd8dcd20671aa82a3c7016977e82de12c332029f1"
     },
     {
       "path": "README.md",
-      "sha256": "1a41462c50ea2074240e06a2f50675abbb238c85d7b0dc9b23de8117f5d4481b"
+      "sha256": "be5871aa9009a166f7cb9af560c647e42db60bf7e5696f7edd4b143bb9272bc7"
     },
     {
       "path": "data/assumptions.json",
@@ -22,12 +28,36 @@
       "sha256": "491aada8a4fdddf18a84a589469ec6d619e1f1e2938d610a7acfa62646d72493"
     },
     {
+      "path": "options/band_figure.py",
+      "sha256": "87064d4d27055b5e3df5374123b95c1f2211c4b4669634b2329a7e543c366535"
+    },
+    {
       "path": "options/engine.py",
       "sha256": "ccdc7e362a9cf29e9a20f1bd07b43f4d83014832182a02ecd082c7183e5ef29f"
     },
     {
+      "path": "options/trade_band.py",
+      "sha256": "c0da74561f5169cde4143921af4bffa35f15ecd9a3b8a7904aa6256f417b5c6d"
+    },
+    {
+      "path": "outputs/band_cash_ledger.csv",
+      "sha256": "4a75e45b015bf6925c3aea5b4e015f617508af8f58ea0384e4d4ff2a9410a050"
+    },
+    {
+      "path": "outputs/band_differences.csv",
+      "sha256": "a197072f578315177932befc706478a3c75fd480c1895a78dd77647438b77617"
+    },
+    {
+      "path": "outputs/band_summary.csv",
+      "sha256": "f875dd9f29b07b89be5afe64eb0312309e65ccc0524a0738e9f626e5227ca1b4"
+    },
+    {
       "path": "outputs/cost_sensitivity.csv",
       "sha256": "0dc91054416f27372e5acf93291346c7641b0a87a3f1edf553e55a6caca2acdb"
+    },
+    {
+      "path": "outputs/delta_band_tradeoff.png",
+      "sha256": "c7caf1d60170190afa3360341bc3e82c851a91f47c2d6264e55446501a528d30"
     },
     {
       "path": "outputs/greeks.csv",
@@ -47,7 +77,7 @@
     },
     {
       "path": "outputs/monte_carlo.csv",
-      "sha256": "283bdca205635daa5664d610c56735c247772614e64287dea5e09840cab60aea"
+      "sha256": "7faea3b025174ff4ba4d707c321da4478a4f023161df245986b1d61cfe423b11"
     },
     {
       "path": "outputs/paired.csv",
@@ -59,7 +89,7 @@
     },
     {
       "path": "outputs/pricing.csv",
-      "sha256": "c0db852883878a3bbe8aea73fc3083d1f8fd9389e5fcced0aec4dd2f5de5af2a"
+      "sha256": "a996859d094a7ac52a89cf9a95107e8c5fb5f71c2ef8cd94e0d8abff6cd23b0c"
     },
     {
       "path": "outputs/pricing_convergence.png",
@@ -71,15 +101,11 @@
     },
     {
       "path": "outputs/results.json",
-      "sha256": "9052d55ea6c4093f038a41b2e1a635e5c981c962b0be0ddea071f322cb67291e"
+      "sha256": "def3b973df2954d0fe90f2f5b10d87ea073de2a231b920bc5e74372eb66b5724"
     },
     {
       "path": "outputs/scenarios.csv",
       "sha256": "b0c9ebca5ade75125e13a81bc20f295c84e18e1f3e569e6e78ac81f82ece2686"
-    },
-    {
-      "path": "outputs/simulation_pnl.csv",
-      "sha256": "b62197f666c0c7ccb0ff524c13b978e74b8efedf9d99b30fcdbb98f41294f152"
     },
     {
       "path": "outputs/stress_comparison.png",
@@ -91,11 +117,20 @@
     },
     {
       "path": "run_analysis.py",
-      "sha256": "6cd97e46de94800e841d027e951625ee46e8eb45d01a7e0b9d95ac1cc7935cd9"
+      "sha256": "a124874d86c44a010686d571bebe06134bd21af336bc6c559a6d10bcd2a99c00"
     },
     {
       "path": "tests/test_options.py",
       "sha256": "61cf8e73971211ae6792012503ea2190118c5f3c974444282db146f0b62e3d41"
+    },
+    {
+      "path": "tests/test_trade_band.py",
+      "sha256": "e8fa08d9134dc455f98ec79050b4c9dcc5a9da51852ea90b452e28f9899091c5"
     }
-  ]
+  ],
+  "report": {
+    "source_package": "George_Dharma_Website_Projects_01-11.zip",
+    "path": "10_Options/George_Dharma_10_Options_Report.pdf",
+    "sha256": "76e2938ddba8a2387d5e939b66b6aff668da19066f4b82e2de6891b169a32e1b"
+  }
 }
